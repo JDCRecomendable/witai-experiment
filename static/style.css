@@ -1,0 +1,189 @@
+/* Copyright (c) 2018 Jared Daniel Carbonell Recomendable. All rights reserved. */
+
+html, body {
+    background-color: #C0C0C0;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    padding: 2px;
+    margin: 2px;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+#head, #foot {
+    border-radius: 12px;
+    background-color: black;
+    text-align: center;
+    padding: 2px;
+}
+
+#head h1 {
+    font-size: 1.4em;
+    color: #FFF;
+}
+
+#head p {
+    font-size: 0.8em;
+    color: #C8C8C8;
+}
+
+#foot p {
+    font-size: 0.8em;
+    color: #C8C8C8;
+}
+
+#body {
+    padding: 12px;
+    background-color: #E0E0E0;
+    text-align: center;
+    border-radius: 12px;
+}
+
+#chat-area {
+    height: calc(100vh - 345px);
+    overflow: auto;
+    margin: 8px;
+}
+
+#chat-area-2 {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: column-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.from-user {
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-style: hidden;
+    border-radius: 24px 24px 0 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto;
+    max-width: 72vw;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    background-color: #c0ffc0;
+    text-align: left;
+    box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
+}
+
+.to-user {
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-style: hidden;
+    border-radius: 24px 24px 24px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto;
+    max-width: 72vw;
+    margin-left: 8px;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    background-color: #FFF;
+    text-align: left;
+    box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
+}
+
+.special {
+    font-size: 0.8em;
+    font-weight: normal;
+    border-style: hidden;
+    border-radius: 24px 24px 24px 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 6px;
+    background-color: #EAEAEA;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
+}
+
+.interaction {
+    align-content: center;
+    background-color: #808080;
+    margin: 4px;
+    padding: 2px;
+    border-radius: 12px;
+}
+
+#input {
+    font-family: "Open Sans";
+    font-size: 1.2em;
+    text-align: center;
+    width: 60vw;
+    margin: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 16px;
+    border-style: hidden;
+    border-width: 0;
+    outline: none;
+}
+
+#submit-input {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: whitesmoke;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 8px;
+    border-color: black;
+    border-radius: 16px;
+    border-style: hidden;
+    border-width: 0;
+    height: 100%;
+    outline: none;
+}
+
+#mic {
+    font-family: "Open Sans";
+    font-size: 1.2em;
+    background-color: whitesmoke;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 24px;
+    border-color: black;
+    border-radius: 16px;
+    border-style: hidden;
+    height: 100%;
+    vertical-align: middle;
+    outline: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-10%);
+}
+
+#submit-input:hover, #mic:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4), 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+#submit-input:focus {
+    box-shadow: none;
+}
