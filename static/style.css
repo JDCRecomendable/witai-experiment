@@ -27,12 +27,7 @@ h1, h2, h3 {
     color: #FFF;
 }
 
-#head p {
-    font-size: 0.8em;
-    color: #C8C8C8;
-}
-
-#foot p {
+#head p, #foot p {
     font-size: 0.8em;
     color: #C8C8C8;
 }
@@ -57,64 +52,46 @@ h1, h2, h3 {
     flex-direction: column-reverse;
 }
 
-.from-user {
+.from-user, .to_user, .special {
     font-size: 1.2em;
     font-weight: lighter;
     border-style: hidden;
-    border-radius: 24px 24px 0 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px;
     width: auto;
     max-width: 72vw;
-    margin-left: auto;
-    margin-right: 8px;
     margin-top: 24px;
     margin-bottom: 6px;
-    background-color: #c0ffc0;
     text-align: left;
     box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
 }
 
+.from-user {
+    background-color: #c0ffc0;
+    border-radius: 24px 24px 0 24px;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
 .to-user {
-    font-size: 1.2em;
-    font-weight: lighter;
-    border-style: hidden;
+    background-color: #FFF;
     border-radius: 24px 24px 24px 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: auto;
-    max-width: 72vw;
     margin-left: 8px;
     margin-right: auto;
-    margin-top: 24px;
-    margin-bottom: 6px;
-    background-color: #FFF;
-    text-align: left;
-    box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
 }
 
 .special {
     font-size: 0.8em;
     font-weight: normal;
-    border-style: hidden;
     border-radius: 24px 24px 24px 24px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 16px;
     padding-right: 16px;
-    width: auto;
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
-    margin-bottom: 6px;
     background-color: #EAEAEA;
     text-align: center;
-    box-shadow: 0 2px 2px 0 #808080, 0 2px 2px 0 #808080;
 }
 
 .interaction {
@@ -125,7 +102,7 @@ h1, h2, h3 {
     border-radius: 12px;
 }
 
-#input {
+#input, #submit-input {
     font-family: "Open Sans";
     font-size: 1.2em;
     text-align: center;
@@ -141,40 +118,17 @@ h1, h2, h3 {
     outline: none;
 }
 
-#submit-input {
-    font-family: "Open Sans";
+#submit-input, #mic {
     font-weight: bold;
-    font-size: 1.2em;
     background-color: whitesmoke;
     color: black;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin: 8px;
     border-color: black;
-    border-radius: 16px;
-    border-style: hidden;
-    border-width: 0;
     height: 100%;
-    outline: none;
 }
 
 #mic {
-    font-family: "Open Sans";
-    font-size: 1.2em;
-    background-color: whitesmoke;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 12px;
-    padding-right: 12px;
     margin-right: 24px;
-    border-color: black;
-    border-radius: 16px;
-    border-style: hidden;
-    height: 100%;
     vertical-align: middle;
-    outline: none;
     position: relative;
     top: 50%;
     transform: translateY(-10%);

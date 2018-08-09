@@ -28,8 +28,8 @@ app = Flask(__name__)
 msgs = [
     ['special', 'Weather Chatbot (Sample) by {}.'.format(code_manufacturer)],
     ['to-user', 'Type in your message in the box below. Press SEND or hit ENTER or RETURN when done.'],
-    ['to-user', 'Alternatively, you may speak, using the microphone button.'],
-    ]
+    ['to-user', 'Alternatively, you may speak, using the microphone button.']
+]
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
