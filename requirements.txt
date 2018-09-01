@@ -1,0 +1,6 @@
+--index-url https://pypi.python.org/simple/
+
+Flask==1.0.2
+weather-api==1.0.4
+wit==5.1.0
+

@@ -11,7 +11,7 @@ In Bash or Command Prompt, run the following:
 
 ### (2) Install the necessary Python packages.  
 Install Flask, Weather-API and Wit by running the following in Bash or Command Prompt:  
-```pip3 install Flask weather-api wit```
+```pip3 install -r requirements.txt```
 
 ### (3) Download and extract all files in this repository.  
 Use your favourite software to extract the downloaded files. For Linux, the following can be executed in Bash if the .tar.gz file was downloaded:  
