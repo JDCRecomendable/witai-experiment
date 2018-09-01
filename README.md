@@ -7,6 +7,7 @@ Copyright &copy; 2018 Jared Daniel Carbonell Recomendable. All rights reserved.
 * [**Flask Micro Web Framework**](http://flask.pocoo.org/)
 * [**Weather-API**](https://developer.yahoo.com/weather/), from Yahoo Developer Network
 * [**Wit.ai API for Python 3**](https://github.com/wit-ai/pywit)
+
 ```
 $ pip install -r requirements.txt
 ```
