@@ -1,17 +1,17 @@
-'''
+"""
 ChatBot Sample
 Version 0.2
 Copyright (c) 2018 Jared Daniel Carbonell Recomendable. All rights reserved.
-'''
+"""
 code_title = 'Chatbot'
 code_version = '0.2'
-code_manufacturer = 'JDCR Design'
+code_manufacturer = 'Jared Daniel Carbonell Recomendable'
 
 import bot
 
 # Initiate the Command-Line Interface
 def interact():
-    '''Starts the commandline interface for this program.'''
+    """Start the commandline interface for this program."""
     while True:
         inp = input('Talk to me > ')
         if inp in ['exit', 'quit', 'bye', 'goodbye']:
@@ -33,7 +33,7 @@ msgs = [
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    '''Main base for web interface.'''
+    """Create the base for the web interface."""
     if request.method == 'GET':
         return show_page(msgs)
     text = request.form['user-text']
@@ -41,15 +41,15 @@ def index():
     return get_response(text)
 
 def show_page(msgs):
-    '''Renders page.'''
+    """Render the page."""
     return render_template('index.html', msgs=msgs[::-1], code_title=code_title, code_version=code_version, code_manufacturer=code_manufacturer)
 
 def web_interface():
-    '''Starts the web interface.'''
+    """Start the web interface."""
     app.run(debug=True, host='0.0.0.0', port=5000)
 
 def get_response(inp):
-    '''Gets response from the chatbot.'''
+    """Get the response from the chatbot."""
     resp = bot.chat(inp)
     msgs.append(['to-user', resp])
     return show_page(msgs)
