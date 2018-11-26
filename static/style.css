@@ -52,7 +52,7 @@ h1, h2, h3 {
     flex-direction: column-reverse;
 }
 
-.from-user, .to_user, .special {
+.from-user, .to-user, .special {
     font-size: 1.2em;
     font-weight: lighter;
     border-style: hidden;
