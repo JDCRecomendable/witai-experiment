@@ -2,6 +2,24 @@
 ChatBot Sample
 Version 0.2
 Copyright (c) 2018 Jared Daniel Carbonell Recomendable. All rights reserved.
+
+CODE QUALITY AND PROGRAM LONGEVITY
+To ensure that this program remains maintainable in the long run and easily
+extensible, the files are organised like so:
+    BASIC COMPONENTS:
+    main.py -- the file that the user should only ever touch
+            -- deals with the Flask micro web framework
+    bot.py  -- the main logic of the program
+    
+    EXTENSION COMPONENTS:
+    (extensions provide the behaviour for the chatbot, note that upon adding an
+    extension, this has to be included in bot.py so that the chatbot can use it)
+    _greetings.py -- behaviour for responding to "Hello"s and "Hi"s
+    _thanks.py    -- behaviour for responding to gratitude
+    _pizza.py     -- enable the chatbot to get the user's favourite flavour of
+                     pizza
+    _weather.py   -- enable the chatbot to return the weather status for a
+                     location as queried by the user
 """
 code_title = 'Chatbot'
 code_version = '0.2'
