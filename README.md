@@ -1,7 +1,7 @@
 # Chatbot Sample with Web Interface
 Chatbot Sample  
 Version 0.2  
-Copyright &copy; 2018 Jared Daniel Carbonell Recomendable. All rights reserved.
+Copyright &copy; 2018 Jared Daniel Carbonell Recomendable.
 
 ## Pre-Requisites (Python 3)
 * [**Flask Micro Web Framework**](http://flask.pocoo.org/)
